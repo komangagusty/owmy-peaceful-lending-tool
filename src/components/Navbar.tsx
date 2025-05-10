@@ -3,6 +3,10 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
+  const openWaitlistForm = () => {
+    window.open('https://tally.so/r/wzO2EM', '_blank');
+  };
+
   return (
     <header className="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 py-4 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -15,7 +19,10 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-gray-600 hover:text-owwy-primary transition-colors duration-300">How It Works</a>
           <a href="#faq" className="text-gray-600 hover:text-owwy-primary transition-colors duration-300">FAQ</a>
         </nav>
-        <Button className="bg-owwy-primary hover:bg-owwy-dark text-white">
+        <Button 
+          className="bg-owwy-primary hover:bg-owwy-dark text-white"
+          onClick={openWaitlistForm}
+        >
           Join Waitlist
         </Button>
       </div>
