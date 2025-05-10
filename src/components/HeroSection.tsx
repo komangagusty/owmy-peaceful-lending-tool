@@ -1,6 +1,9 @@
 
 import React from 'react';
 import WaitlistForm from './WaitlistForm';
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Bell, Check } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -22,46 +25,45 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1 relative animate-fade-in">
-            <div className="relative z-10 bg-white rounded-2xl shadow-xl p-6 md:p-8">
-              <div className="flex items-center mb-5">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd" />
-                  </svg>
+            <Card className="rounded-3xl shadow-xl overflow-hidden bg-white p-8">
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Ahmed Khan</h3>
+                  <p className="text-gray-500">Car repair loan</p>
                 </div>
-                <h3 className="ml-3 font-semibold text-lg">Loan Agreement</h3>
+                <span className="px-4 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                  Active
+                </span>
               </div>
               
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Amount:</span>
-                  <span className="font-medium">$2,000</span>
-                </div>
-                
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Type:</span>
-                  <span className="font-medium">Qard (interest-free)</span>
-                </div>
-                
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Duration:</span>
-                  <span className="font-medium">6 months</span>
-                </div>
-                
-                <div className="border-t border-gray-200 my-3 pt-3">
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <div className="text-gray-600">Next payment:</div>
-                      <div className="font-medium">$333 on July 15</div>
-                    </div>
-                    <button className="bg-owwy-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-owwy-dark transition-colors">
-                      Send Reminder
-                    </button>
-                  </div>
+              <div className="mt-8">
+                <div className="text-5xl font-bold mb-1">$1,000</div>
+                <div className="text-gray-500">Started 4/1/2024</div>
+              </div>
+              
+              <div className="mt-8 bg-indigo-50 rounded-xl p-4 flex items-start gap-3">
+                <Bell className="text-blue-400 mt-1" />
+                <div>
+                  <div className="text-gray-700 font-medium">Next Payment Due</div>
+                  <div className="text-gray-800 text-lg">5/1/2024</div>
                 </div>
               </div>
-            </div>
+              
+              <div className="mt-6 grid grid-cols-2 gap-4">
+                <Button 
+                  variant="outline" 
+                  className="rounded-xl py-6 border-gray-300"
+                >
+                  Send Reminder
+                </Button>
+                <Button 
+                  className="bg-blue-500 hover:bg-blue-600 rounded-xl py-6 text-white flex items-center justify-center gap-2"
+                >
+                  <Check className="h-5 w-5" />
+                  Mark as Paid
+                </Button>
+              </div>
+            </Card>
             
             <div className="absolute -bottom-4 -right-4 w-64 h-64 bg-owwy-light rounded-full -z-10"></div>
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-owwy-accent/20 rounded-full -z-10"></div>
