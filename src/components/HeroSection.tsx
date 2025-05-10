@@ -23,36 +23,43 @@ const HeroSection = () => {
           
           <div className="flex-1 relative animate-fade-in">
             <div className="relative z-10 bg-white rounded-2xl shadow-xl p-6 md:p-8">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-owwy-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-                  OW
+              <div className="flex items-center mb-5">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd" />
+                  </svg>
                 </div>
-                <div className="ml-4">
-                  <div className="font-medium">OWWY</div>
-                  <div className="text-sm text-gray-500">Peaceful Lending</div>
-                </div>
+                <h3 className="ml-3 font-semibold text-lg">Loan Agreement</h3>
               </div>
               
-              <div className="bg-gray-50 rounded-lg p-4 mb-4 border border-gray-100">
-                <div className="text-sm text-gray-600 mb-2">Active Loan</div>
-                <div className="flex justify-between items-center">
-                  <div>
-                    <div className="font-medium">Sarah</div>
-                    <div className="text-sm text-green-600">On time</div>
-                  </div>
-                  <div className="text-right">
-                    <div className="font-medium">$500</div>
-                    <div className="text-sm text-gray-500">Due in 3 days</div>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Amount:</span>
+                  <span className="font-medium">$2,000</span>
+                </div>
+                
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Type:</span>
+                  <span className="font-medium">Qard (interest-free)</span>
+                </div>
+                
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Duration:</span>
+                  <span className="font-medium">6 months</span>
+                </div>
+                
+                <div className="border-t border-gray-200 my-3 pt-3">
+                  <div className="flex justify-between items-center">
+                    <div>
+                      <div className="text-gray-600">Next payment:</div>
+                      <div className="font-medium">$333 on July 15</div>
+                    </div>
+                    <button className="bg-owwy-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-owwy-dark transition-colors">
+                      Send Reminder
+                    </button>
                   </div>
                 </div>
-                <div className="mt-3 h-2 bg-gray-200 rounded-full">
-                  <div className="h-2 bg-green-500 rounded-full" style={{ width: '75%' }}></div>
-                </div>
-                <div className="mt-1 text-xs text-gray-500 text-right">75% repaid</div>
-              </div>
-              
-              <div className="text-center text-sm text-gray-500">
-                No awkward conversations. No forgotten payments.
               </div>
             </div>
             
