@@ -1,7 +1,24 @@
 
-import React from 'react';
+import React, { useState } from 'react';
+
+const images = [
+  '/images/product-showcase-1.png',
+  '/images/product-showcase-2.png',
+  '/images/product-showcase-3.png',
+];
 
 const ProductLineSection = () => {
+  const [current, setCurrent] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  // Fade effect for manual navigation only
+  const handleNav = (nextIdx: number) => {
+    setFade(false);
+    setTimeout(() => {
+      setCurrent(nextIdx);
+      setFade(true);
+    }, 400);
+  };
   return (
     <section className="bg-gray-50 py-16 md:py-24">
       <div className="section-container">
@@ -72,6 +89,39 @@ const ProductLineSection = () => {
         
         <div className="mt-8 text-center">
           <p className="text-gray-600 italic">All services are fully Shariah-compliant! Don't worry!</p>
+        </div>
+
+        {/* Product Showcase Carousel */}
+        <div className="flex flex-col items-center my-16">
+          <div className="relative flex items-center justify-center">
+            <button
+              className="absolute left-0 z-10 bg-white rounded-full shadow p-2 -ml-6 disabled:opacity-30"
+              onClick={() => handleNav(current === 0 ? images.length - 1 : current - 1)}
+              aria-label="Previous"
+              disabled={current === 0}
+            >
+              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <div className="max-w-xs w-full p-0 flex flex-col items-center">
+              <img src={images[current]} alt={`Product Showcase ${current + 1}`} className={`w-full mb-4 object-contain transition-opacity duration-400 ${fade ? 'opacity-100' : 'opacity-0'}`} />
+            </div>
+            <button
+              className="absolute right-0 z-10 bg-white rounded-full shadow p-2 -mr-6 disabled:opacity-30"
+              onClick={() => handleNav(current === images.length - 1 ? 0 : current + 1)}
+              aria-label="Next"
+              disabled={current === images.length - 1}
+            >
+              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+          <div className="flex gap-2 mt-4">
+            {images.map((_, idx) => (
+              <span
+                key={idx}
+                className={`w-2 h-2 rounded-full ${idx === current ? 'bg-owwy-primary' : 'bg-gray-300'}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

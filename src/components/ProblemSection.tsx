@@ -13,7 +13,7 @@ const ProblemSection = () => {
             Helping those you love should feel good, not frustrating. But when you lend money to someone close:
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 feature-card">
             <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">

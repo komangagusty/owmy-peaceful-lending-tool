@@ -6,6 +6,12 @@ const WhySection = () => {
     <section className="bg-owwy-primary text-white py-16 md:py-24">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center">
+          <img 
+            src="/images/pinky-promise.png" 
+            alt="Pinky promise illustration" 
+            className="mx-auto mb-8 w-40 h-40 md:w-56 md:h-56 object-contain drop-shadow-lg"
+            loading="eager"
+          />
           <h2 className="font-display font-bold text-3xl md:text-4xl mb-8">
             You Deserve to Feel Good About Helping
           </h2>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const HowItWorksSection = () => {
@@ -10,7 +9,6 @@ const HowItWorksSection = () => {
             Lending Made Easy and Worry-Free
           </h2>
         </div>
-        
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8">
           <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 feature-card">
             <div className="w-12 h-12 bg-owwy-primary rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
@@ -21,7 +19,6 @@ const HowItWorksSection = () => {
               Fill in the details, choose your terms, and create a secure agreement in minutes.
             </p>
           </div>
-          
           <div className="lg:mt-12 bg-white rounded-xl p-6 shadow-md border border-gray-100 feature-card">
             <div className="w-12 h-12 bg-owwy-primary rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
               2
@@ -31,7 +28,6 @@ const HowItWorksSection = () => {
               Share the agreement directly through WhatsApp for easy e-signature.
             </p>
           </div>
-          
           <div className="lg:mt-24 bg-white rounded-xl p-6 shadow-md border border-gray-100 feature-card">
             <div className="w-12 h-12 bg-owwy-primary rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
               3
@@ -41,7 +37,6 @@ const HowItWorksSection = () => {
               OWWY sends gentle reminders, so you don't have to ask (or beg people who borrowed from you!).
             </p>
           </div>
-          
           <div className="lg:mt-12 bg-white rounded-xl p-6 shadow-md border border-gray-100 feature-card">
             <div className="w-12 h-12 bg-owwy-primary rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
               4
@@ -51,7 +46,6 @@ const HowItWorksSection = () => {
               See every installment, every time, with full transparency.
             </p>
           </div>
-          
           <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 feature-card">
             <div className="w-12 h-12 bg-owwy-primary rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
               5
@@ -62,6 +56,7 @@ const HowItWorksSection = () => {
             </p>
           </div>
         </div>
+
       </div>
     </section>
   );
