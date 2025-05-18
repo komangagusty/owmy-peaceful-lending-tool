@@ -1,11 +1,13 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { useTranslation } from '../context/TranslationContext';
 
 const WaitlistForm = () => {
+  const { t } = useTranslation();
+  
   const handleClick = () => {
-    // Open the Tally.so form in a new tab
-    window.open('https://tally.so/r/wvbB1A', '_blank');
+    window.open(t.common.tallyFormUrl, '_blank');
   };
 
   return (
@@ -14,7 +16,7 @@ const WaitlistForm = () => {
         onClick={handleClick}
         className="bg-owwy-primary hover:bg-owwy-dark text-white w-full sm:w-auto"
       >
-        Join Waitlist
+        {t.common.joinWaitlist}
       </Button>
     </div>
   );

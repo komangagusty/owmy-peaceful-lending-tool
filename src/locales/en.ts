@@ -1,7 +1,8 @@
 export const en = {
   common: {
     joinWaitlist: "Join the Waitlist",
-    learnMore: "Learn More"
+    learnMore: "Learn More",
+    tallyFormUrl: "https://tally.so/r/wvbB1A"
   },
   hero: {
     title: "Lend Money to Friends & Family Without Drama",
