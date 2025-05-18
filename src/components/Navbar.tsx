@@ -3,8 +3,8 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
-  const openWaitlistForm = () => {
-    window.open('https://tally.so/r/wzO2EM', '_blank');
+  const handleClick = () => {
+    window.open('https://tally.so/r/wvbB1A', '_blank');
   };
 
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
         </nav>
         <Button 
           className="bg-owwy-primary hover:bg-owwy-dark text-white"
-          onClick={openWaitlistForm}
+          onClick={handleClick}
         >
           Join Waitlist
         </Button>

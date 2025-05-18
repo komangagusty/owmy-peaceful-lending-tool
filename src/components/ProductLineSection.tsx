@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { useTranslation } from '../context/TranslationContext';
 
 const images = [
   '/images/product-showcase-1.png',
@@ -8,6 +9,7 @@ const images = [
 ];
 
 const ProductLineSection = () => {
+  const { t } = useTranslation();
   const [current, setCurrent] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -24,7 +26,7 @@ const ProductLineSection = () => {
       <div className="section-container">
         <div className="mb-16 text-center">
           <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
-            Flexible Solutions for Every Lending Situation
+            {t.productLine.title}
           </h2>
         </div>
         

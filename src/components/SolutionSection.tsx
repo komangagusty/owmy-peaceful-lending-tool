@@ -1,16 +1,18 @@
 
 import React from 'react';
+import { useTranslation } from '../context/TranslationContext';
 
 const SolutionSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="solution" className="bg-gray-50 py-16 md:py-24">
       <div className="section-container">
         <div className="mb-16 text-center">
           <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
-            OWWY Has Your Back (and Your Heart)
+            {t.solution.title}
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            A friendly tool to manage personal loans that keeps things kind, clear, and calm.
+            {t.solution.desc}
           </p>
         </div>
         
@@ -23,9 +25,9 @@ const SolutionSection = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h3 className="font-display font-semibold text-xl mb-2">Easy Loan Agreements</h3>
+                <h3 className="font-display font-semibold text-xl mb-2">{t.solution.points[0].title}</h3>
                 <p className="text-gray-600">
-                  Create simple, secure loan terms in minutes. All your lending should be documented from now!
+                  {t.solution.points[0].desc}
                 </p>
               </div>
             </div>
@@ -39,9 +41,9 @@ const SolutionSection = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h3 className="font-display font-semibold text-xl mb-2">WhatsApp-First</h3>
+                <h3 className="font-display font-semibold text-xl mb-2">{t.solution.points[1].title}</h3>
                 <p className="text-gray-600">
-                  Manage everything from your favorite chat app. Request, remind, and track. You can manage all without switching apps.
+                  {t.solution.points[1].desc}
                 </p>
               </div>
             </div>
@@ -55,9 +57,9 @@ const SolutionSection = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h3 className="font-display font-semibold text-xl mb-2">Gentle, Custom Reminders</h3>
+                <h3 className="font-display font-semibold text-xl mb-2">{t.solution.points[2].title}</h3>
                 <p className="text-gray-600">
-                  Choose the tone that fits: kind, firm, or neutral. We'll nudge your borrower, without hurting your bond. Promise!
+                  {t.solution.points[2].desc}
                 </p>
               </div>
             </div>
@@ -71,9 +73,9 @@ const SolutionSection = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h3 className="font-display font-semibold text-xl mb-2">Legally Valid Documents</h3>
+                <h3 className="font-display font-semibold text-xl mb-2">{t.solution.points[3].title}</h3>
                 <p className="text-gray-600">
-                  Your generosity is protected with documentation that holds up if things go wrong.
+                  {t.solution.points[3].desc}
                 </p>
               </div>
             </div>
@@ -87,9 +89,9 @@ const SolutionSection = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h3 className="font-display font-semibold text-xl mb-2">Emotionally Safe Lending</h3>
+                <h3 className="font-display font-semibold text-xl mb-2">{t.solution.points[4].title}</h3>
                 <p className="text-gray-600">
-                  No more begging. No more guilt. Just peace of mind.
+                  {t.solution.points[4].desc}
                 </p>
               </div>
             </div>

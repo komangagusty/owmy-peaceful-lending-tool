@@ -1,7 +1,9 @@
 
 import React from 'react';
+import { useTranslation } from '../context/TranslationContext';
 
 const WhySection = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-owwy-primary text-white py-16 md:py-24">
       <div className="section-container">
@@ -13,23 +15,23 @@ const WhySection = () => {
             loading="eager"
           />
           <h2 className="font-display font-bold text-3xl md:text-4xl mb-8">
-            You Deserve to Feel Good About Helping
+            {t.why.title}
           </h2>
           
           <p className="text-xl mb-6">
-            You're generous. You're loyal.
+            {t.why.subtitle}
           </p>
           
           <p className="text-xl mb-12">
-            But even the kindest people need assurance. OWWY makes sure your goodness isn't taken for granted.
+            {t.why.desc}
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <a href="https://tally.so/r/wzO2EM" target="_blank" rel="noopener noreferrer" className="bg-white text-owwy-primary hover:bg-gray-100 transition-colors px-8 py-3 rounded-lg font-medium text-lg">
-              Join the Waitlist
+            <a href="https://tally.so/r/wvbB1A" target="_blank" rel="noopener noreferrer" className="bg-white text-owwy-primary hover:bg-gray-100 transition-colors px-8 py-3 rounded-lg font-medium text-lg">
+              {t.common.joinWaitlist}
             </a>
             <a href="#faq" className="bg-transparent border border-white hover:bg-white/10 transition-colors px-8 py-3 rounded-lg font-medium text-lg">
-              Learn More
+              {t.common.learnMore}
             </a>
           </div>
         </div>

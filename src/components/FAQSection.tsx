@@ -1,37 +1,18 @@
 
 import React from 'react';
+import { useTranslation } from '../context/TranslationContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const FAQSection = () => {
-  const faqs = [
-    {
-      question: "Is OWWY Shariah-compliant?",
-      answer: "Yes! OWWY is designed with ethical lending principles in mind."
-    },
-    {
-      question: "Do I need legal knowledge to use OWWY?",
-      answer: "Not at all. Everything is simplified for you."
-    },
-    {
-      question: "Can I manage existing loans?",
-      answer: "Yes, you can upload any existing agreement and let OWWY take over."
-    },
-    {
-      question: "How does OWWY send reminders?",
-      answer: "We send polite, customizable reminders through WhatsApp, Email, or SMS. You choose."
-    },
-    {
-      question: "Is my agreement legally binding?",
-      answer: "Absolutely. Every agreement is secured with legally valid documentation."
-    }
-  ];
+  const { t } = useTranslation();
+  const faqs = t.faq.items;
   
   return (
     <section id="faq" className="bg-white py-16 md:py-24">
       <div className="section-container">
         <div className="mb-16 text-center">
           <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
-            Questions that are mostly asked!
+            {t.faq.title}
           </h2>
         </div>
         
