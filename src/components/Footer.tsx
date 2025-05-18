@@ -29,7 +29,7 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-medium text-lg mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-500 hover:text-owwy-primary transition-colors">Contact Us</a></li>
+              <li><a href="mailto:team@owwy.app" className="text-gray-500 hover:text-owwy-primary transition-colors">Contact Us</a></li>
               <li><a href="#" className="text-gray-500 hover:text-owwy-primary transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="text-gray-500 hover:text-owwy-primary transition-colors">Terms of Service</a></li>
             </ul>
