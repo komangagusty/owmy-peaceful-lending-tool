@@ -1,7 +1,8 @@
 export const id = {
   common: {
-    joinWaitlist: "Gabung Daftar Tunggu",
-    learnMore: "Pelajari Lebih Lanjut"
+    joinWaitlist: "Join Waiting List",
+    learnMore: "Pelajari Lebih Lanjut",
+    tallyFormUrl: "https://tally.so/r/nPyEVB"
   },
   hero: {
     title: "Pinjemin Duit ke Temen & Keluarga Tanpa Baper",

@@ -16,21 +16,21 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    historyApiFallback: {
-      rewrites: [
-        { from: /^\/id\/?.*/, to: '/id/index.html' },
-        { from: /./, to: '/index.html' }
-      ]
+    fs: {
+      strict: false,
+      allow: ['..']
+    },
+    headers: {
+      'Access-Control-Allow-Origin': '*',
     }
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+      '@': path.resolve(__dirname, './src')
+    }
+  }
 }));

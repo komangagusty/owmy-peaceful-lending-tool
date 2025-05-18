@@ -1,10 +1,13 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { useTranslation } from '../context/TranslationContext';
 
 const Navbar = () => {
+  const { t } = useTranslation();
+  
   const handleClick = () => {
-    window.open('https://tally.so/r/wvbB1A', '_blank');
+    window.open(t.common.tallyFormUrl, '_blank');
   };
 
   return (
@@ -23,7 +26,7 @@ const Navbar = () => {
           className="bg-owwy-primary hover:bg-owwy-dark text-white"
           onClick={handleClick}
         >
-          Join Waitlist
+          {t.common.joinWaitlist}
         </Button>
       </div>
     </header>
