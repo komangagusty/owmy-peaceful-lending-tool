@@ -1,19 +1,21 @@
 import React from 'react';
 import WaitlistForm from './WaitlistForm';
 import { Button } from "@/components/ui/button";
+import { useTranslation } from '../context/TranslationContext';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="hero-gradient pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       <div className="section-container">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="flex-1 text-center lg:text-left animate-fade-in">
             <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-900 mb-6">
-              Lending to Friends and Family Shouldn't Hurt Your Heart
+              {t.hero.title}
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-              OWWY makes lending simple, stress-free, and emotionally peaceful. 
-              So you can help without the awkward follow-up.
+              {t.hero.subtitle}
+              {t.hero.desc}
             </p>
             
             <div className="flex justify-center lg:justify-start">

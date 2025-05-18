@@ -1,5 +1,5 @@
-
 import React, { useEffect } from 'react';
+import { TranslationProvider } from '../context/TranslationContext';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ProblemSection from '../components/ProblemSection';
@@ -19,44 +19,40 @@ const Index = () => {
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (target.tagName === 'A') {
-        const href = (target as HTMLAnchorElement).getAttribute('href');
-        if (href && href.startsWith('#') && href.length > 1) {
+        const href = target.getAttribute('href');
+        if (href?.startsWith('#')) {
           e.preventDefault();
-          const id = href.substring(1);
-          const element = document.getElementById(id);
+          const element = document.querySelector(href);
           if (element) {
-            element.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-            history.pushState(null, '', href);
+            element.scrollIntoView({ behavior: 'smooth' });
           }
         }
       }
     };
 
     document.addEventListener('click', handleAnchorClick);
-    
     return () => {
       document.removeEventListener('click', handleAnchorClick);
     };
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <HowItWorksSection />
-      <ProductLineSection />
-      <AddOnSection />
-      <WhySection />
-      <TestimonialsSection />
-      <FAQSection />
-      <CTASection />
-      <Footer />
-    </div>
+    <TranslationProvider initialLanguage="en">
+      <div className="min-h-screen bg-white">
+        <Navbar />
+        <HeroSection />
+        <ProblemSection />
+        <SolutionSection />
+        <HowItWorksSection />
+        <ProductLineSection />
+        <AddOnSection />
+        <WhySection />
+        <TestimonialsSection />
+        <FAQSection />
+        <CTASection />
+        <Footer />
+      </div>
+    </TranslationProvider>
   );
 };
 
