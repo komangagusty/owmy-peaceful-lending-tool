@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const WaitlistForm = () => {
   const handleClick = () => {
     // Open the Tally.so form in a new tab
-    window.open('https://tally.so/r/wzO2EM', '_blank');
+    window.open('https://tally.so/r/wvbB1A', '_blank');
   };
 
   return (

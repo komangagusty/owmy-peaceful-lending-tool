@@ -1,13 +1,15 @@
 
 import React from 'react';
+import { useTranslation } from '../context/TranslationContext';
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gray-50 py-16 md:py-24">
       <div className="section-container">
         <div className="mb-16 text-center">
           <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
-            What Early Users Say
+            {t.testimonials.title}
           </h2>
         </div>
         
@@ -18,13 +20,13 @@ const TestimonialsSection = () => {
                 F
               </div>
               <div className="ml-4">
-                <div className="font-display font-medium text-lg">Fadilah</div>
-                <div className="text-sm text-gray-500">Early access user</div>
+                <div className="font-display font-medium text-lg">{t.testimonials.items[0].name}</div>
+                <div className="text-sm text-gray-500">{t.testimonials.items[0].role}</div>
               </div>
             </div>
             
             <blockquote className="text-gray-700 italic mb-4">
-              "I could finally lend to my cousin without worrying about chasing him. OWWY reminded him for me, with kindness."
+              {t.testimonials.items[0].quote}
             </blockquote>
             
             <div className="flex text-yellow-400">
@@ -48,13 +50,13 @@ const TestimonialsSection = () => {
                 A
               </div>
               <div className="ml-4">
-                <div className="font-display font-medium text-lg">Arif</div>
-                <div className="text-sm text-gray-500">Early access user</div>
+                <div className="font-display font-medium text-lg">{t.testimonials.items[1].name}</div>
+                <div className="text-sm text-gray-500">{t.testimonials.items[1].role}</div>
               </div>
             </div>
             
             <blockquote className="text-gray-700 italic mb-4">
-              "I never liked asking people to pay me back. OWWY did it for me, without drama."
+              {t.testimonials.items[1].quote}
             </blockquote>
             
             <div className="flex text-yellow-400">
