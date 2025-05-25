@@ -2,7 +2,7 @@ import { Subtitles } from "lucide-react";
 
 export const id = {
   common: {
-    joinWaitlist: "Join Waiting List",
+    joinWaitlist: "Join Waitlist",
     learnMore: "Pelajari Lebih Lanjut",
     tallyFormUrl: "https://tally.so/r/nPyEVB"
   },
@@ -10,7 +10,7 @@ export const id = {
     title: "Pinjemin Duit ke Temen & Keluarga Tanpa Baper",
     subtitle: "OWWY bikin minjemin duit jadi gampang, santai, dan NO DRAMA!",
     desc: "Sekarang, kamu bisa bantu orang tersayang tanpa rasa awkward pas nagih!",
-    cta: "Join the Waitlist"
+    cta: "Join Waitlist"
   },
   problem: {
     title: "Masalahnya",
@@ -81,7 +81,7 @@ export const id = {
   faq: {
     title: "Pertanyaan yang Sering Ditanyain (FAQ) 🤔",
     items: [
-      { question: "Apakah owwy itu lending company?", answer: "Bukan! owwy suma bantu kamu mencatat, organisir, dan ingetin orang yang minjem duit ke kamu supaya bisa kembalikan sesual kesepakatan." },
+      { question: "Apakah owwy itu lending company?", answer: "Bukan! owwy cuma bantu kamu mencatat, organisir, dan ingetin orang yang minjem duit ke kamu supaya bisa kembalikan sesual kesepakatan." },
       { question: "OWWY itu syariah-compliant ga?", answer: "Yes! OWWY didesain dengan prinsip etis dan sesuai syariah." },
       { question: "Gue perlu paham hukum buat pake OWWY?", answer: "Nggak sama sekali. Semuanya udah diringkas biar kamu tinggal pake." },
       { question: "Pinjaman yang udah ada bisa diatur OWWY?", answer: "Bisa banget, tinggal upload perjanjiannya, OWWY yang urus sisanya." },

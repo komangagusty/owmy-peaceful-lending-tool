@@ -2,7 +2,7 @@ import { Subtitles } from "lucide-react";
 
 export const en = {
   common: {
-    joinWaitlist: "Join the Waitlist",
+    joinWaitlist: "Join Waitlist",
     learnMore: "Learn More",
     tallyFormUrl: "https://tally.so/r/wvbB1A"
   },
@@ -10,7 +10,7 @@ export const en = {
     title: "Lend Money to Friends & Family Without Drama",
     subtitle: "OWWY makes lending money easy, relaxed, and NO DRAMA!",
     desc: "Now you can help your loved ones without feeling awkward when it's time to collect!",
-    cta: "Join the Waitlist"
+    cta: "Join Waitlist"
   },
   problem: {
     title: "The Problem",

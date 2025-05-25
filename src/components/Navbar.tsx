@@ -23,7 +23,7 @@ const Navbar = () => {
     <header className="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 py-4 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center space-x-2">
-          <div className="font-display font-bold text-2xl text-owwy-primary">OWWY</div>
+          <img src="/images/logo.png" alt="OWWY Logo" className="h-16 w-auto" />
         </a>
         <nav className="hidden md:flex items-center space-x-8">
           <a 

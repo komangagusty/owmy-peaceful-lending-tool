@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="font-display font-bold text-2xl text-owwy-primary mb-4">OWWY</div>
+            <img src="/images/logo.png" alt="OWWY Logo" className="h-16 w-auto mb-4" />
             <p className="text-gray-500 max-w-xs">
               Making lending simple, stress-free, and emotionally peaceful.
             </p>
