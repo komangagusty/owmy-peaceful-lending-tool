@@ -25,8 +25,11 @@ const ProductLineSection = () => {
     <section className="bg-gray-50 py-16 md:py-24">
       <div className="section-container">
         <div className="mb-16 text-center">
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
+        <p className="font-display text-2xl md:text-4xl text-gray-900">
             {t.productLine.title}
+          </p>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
+            {t.productLine.subtitle}
           </h2>
         </div>
         

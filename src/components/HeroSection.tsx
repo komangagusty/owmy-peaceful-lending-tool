@@ -15,6 +15,7 @@ const HeroSection = () => {
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
               {t.hero.subtitle}
+              <br />
               {t.hero.desc}
             </p>
             

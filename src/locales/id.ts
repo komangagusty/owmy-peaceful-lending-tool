@@ -1,3 +1,5 @@
+import { Subtitles } from "lucide-react";
+
 export const id = {
   common: {
     joinWaitlist: "Join Waiting List",
@@ -11,7 +13,8 @@ export const id = {
     cta: "Join the Waitlist"
   },
   problem: {
-    title: "Masalahnya: Minjemin Duit Sering Bikin Baper! 😩",
+    title: "Masalahnya",
+    subtitle: "Minjemin Duit Sering Bikin Baper! 😩",
     desc: "Niat hati mau bantu, eh malah jadi bingung nagihnya. Kenapa? Karena:",
     points: [
       "Malu nagih balik, takut dibilang ga ikhlas",
@@ -21,7 +24,8 @@ export const id = {
     familiar: "Sounds familiar? Pernah ngerasain juga kan? Tenang, kamu gak sendirian!"
   },
   solution: {
-    title: "Solusinya: OWWY Si Temen Setia Buat Urusan Duit Mu! 😎",
+    title: "Solusinya",
+    subtitle: "OWWY Si Temen Setia Buat Urusan Duit Mu! 😎",
     desc: "Sebuah tools keren yang bikin pinjem-meminjem jadi lebih easy, clear, dan chill.",
     points: [
       { title: "Easy Loan Agreements", desc: "Bikin perjanjian pinjaman super simpel dan aman dalam hitungan menit! Dari sekarang, semua minjem-minjeman kudu ada bukti tertulis!" },
@@ -32,7 +36,8 @@ export const id = {
     ]
   },
   howItWorks: {
-    title: "Cara Kerja OWWY: Super Easy, Super Chill!",
+    title: "Cara Kerja OWWY",
+    subtitle: "Super Easy, Super Chill!",
     steps: [
       { title: "Bikin Perjanjian", desc: "Isi detail, tentuin syarat, dan bikin perjanjian yang super legit dalam hitungan menit." },
       { title: "Kirim & Tanda Tangan Digital", desc: "Langsung share lewat WhatsApp buat e-signature. Ga pake ribet!" },
@@ -42,10 +47,12 @@ export const id = {
     ]
   },
   productLine: {
-    title: "Produk OWWY: Sesuai Kebutuhan, Tanpa Ribet!"
+    title: "Produk OWWY",
+    subtitle: "Sesuai Kebutuhan, Tanpa Ribet!",
   },
   addOn: {
-    title: "Layanan Tambahan: Bikin Minjem Duit Makin SANTUY! 🔥",
+    title: "Layanan Tambahan",
+    subtitle: "Bikin Minjem Duit Makin SANTUY! 🔥",
     desc: "Pilih fitur tambahan yang kamu butuh:",
     points: [
       { icon: "👥", title: "Tambah Saksi", description: "Mau lebih aman? Tambah saksi biar makin solid!" },

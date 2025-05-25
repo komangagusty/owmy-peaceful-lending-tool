@@ -7,8 +7,11 @@ const HowItWorksSection = () => {
     <section id="how-it-works" className="bg-white py-16 md:py-24">
       <div className="section-container">
         <div className="mb-16 text-center">
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
+        <p className="font-display text-2xl md:text-4xl text-gray-900">
             {t.howItWorks.title}
+          </p>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
+            {t.howItWorks.subtitle}
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8">

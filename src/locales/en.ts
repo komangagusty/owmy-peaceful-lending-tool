@@ -1,3 +1,5 @@
+import { Subtitles } from "lucide-react";
+
 export const en = {
   common: {
     joinWaitlist: "Join the Waitlist",
@@ -11,7 +13,8 @@ export const en = {
     cta: "Join the Waitlist"
   },
   problem: {
-    title: "The Problem: Lending Money Gets Awkward! 😩",
+    title: "The Problem",
+    subtitle: "Lending Money Gets Awkward! 😩",
     desc: "You want to help, but it gets awkward to ask for repayment. Why? Because:",
     points: [
       "😬 Embarrassed to ask back, afraid to seem insincere",
@@ -21,7 +24,7 @@ export const en = {
     familiar: "Sounds familiar? You’ve felt this too, right? Don’t worry, you’re not alone!"
   },
   solution: {
-    title: "OWWY Has Your Back (and Your Heart)",
+    subtitle: "OWWY Has Your Back (and Your Heart)",
     desc: "A friendly tool to manage personal loans that keeps things kind, clear, and calm.",
     points: [
       { title: "Easy Loan Agreements", desc: "Create simple, secure loan terms in minutes. All your lending should be documented from now!" },
@@ -32,7 +35,7 @@ export const en = {
     ]
   },
   howItWorks: {
-    title: "Lending Made Easy and Worry-Free",
+    subtitle: "Lending Made Easy and Worry-Free",
     steps: [
       { title: "Create an Agreement", desc: "Fill in the details, choose your terms, and create a secure agreement in minutes." },
       { title: "Send & Sign", desc: "Share the agreement directly through WhatsApp for easy e-signature." },
@@ -42,10 +45,10 @@ export const en = {
     ]
   },
   productLine: {
-    title: "Flexible Solutions for Every Lending Situation"
+    subtitle: "Flexible Solutions for Every Lending Situation"
   },
   addOn: {
-    title: "Enhance Your Lending Experience",
+    subtitle: "Enhance Your Lending Experience",
     desc: "Customize your lending process with these powerful add-ons",
     points: [
       { icon: "👥", title: "Add Witness(es)", description: "Strengthen agreements with additional signatories for transparency." },

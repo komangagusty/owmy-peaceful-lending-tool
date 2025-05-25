@@ -8,8 +8,11 @@ const AddOnSection = () => {
     <section className="bg-white py-16 md:py-24">
       <div className="section-container">
         <div className="mb-16 text-center">
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
+        <p className="font-display text-2xl md:text-4xl text-gray-900">
             {t.addOn.title}
+          </p>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-6">
+            {t.addOn.subtitle}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t.addOn.desc}
