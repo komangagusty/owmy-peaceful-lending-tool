@@ -1,7 +1,15 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from '../context/TranslationContext';
 
 const Footer = () => {
+  const { language } = useTranslation();
+  
+  // Determine the URLs based on the current language
+  const privacyPolicyUrl = language === 'id' ? '/id/privacy-policy' : '/privacy-policy';
+  const termsOfServiceUrl = language === 'id' ? '/id/terms-of-service' : '/terms-of-service';
+  
   return (
     <footer className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -30,8 +38,16 @@ const Footer = () => {
             <h3 className="font-display font-medium text-lg mb-4">Contact</h3>
             <ul className="space-y-2">
               <li><a href="mailto:team@owwy.app" className="text-gray-500 hover:text-owwy-primary transition-colors">Contact Us</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-owwy-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-owwy-primary transition-colors">Terms of Service</a></li>
+              <li>
+                <Link to={privacyPolicyUrl} className="text-gray-500 hover:text-owwy-primary transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to={termsOfServiceUrl} className="text-gray-500 hover:text-owwy-primary transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
